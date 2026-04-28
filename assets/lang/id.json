@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "skills": "Keahlian",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "hire": "Hire Me"
+  },
+  "hero": {
+    "greeting": "Halo, Saya",
+    "desc": "Membangun bot Telegram, dashboard web, dan sistem otomatisasi premium. Spesialisasi Node.js, Baileys, dan script eksklusif.",
+    "cta_work": "Lihat Karya",
+    "cta_tg": "Telegram",
+    "stat_bots": "Bot Dibuat",
+    "stat_exp": "Tahun Exp",
+    "stat_coffee": "Kopi Diminum"
+  },
+  "skills": {
+    "label": "// Keahlian",
+    "title": "Stack & Tools",
+    "items": [
+      { "name": "Telegram Bot", "desc": "node-telegram-bot-api, Telegraf, inline keyboards, session management, role-based access." },
+      { "name": "WhatsApp Bot", "desc": "Baileys library, multi-session, connection handling, command routing." },
+      { "name": "Web Dashboard", "desc": "Dark premium UI, GitHub API backend, vault manager, token & role system." },
+      { "name": "File Integrity", "desc": "SHA-256 chain hash, HMAC-SHA256, XOR obfuscation, timing-safe comparison." },
+      { "name": "Node.js", "desc": "PM2, Express, modular refactor, async/await patterns, Termux deployment." },
+      { "name": "Enkripsi", "desc": "AES-256-GCM, steganography, SHA-512 hashing, obfuskasi JS via js-confuser." }
+    ]
+  },
+  "projects": {
+    "label": "// Karya",
+    "title": "Projects"
+  },
+  "contact": {
+    "label": "// Kontak",
+    "title": "Ayo Bangun\nSesuatu.",
+    "desc": "Butuh bot custom, dashboard, atau script eksklusif? Hit me up.",
+    "tg": "Telegram @ungkeeeeee",
+    "ig": "Instagram @fturrmn"
+  },
+  "footer": {
+    "copy": "© 2025 Ungke — All rights reserved"
+  },
+  "music": {
+    "playing": "Sedang Diputar",
+    "paused": "Dijeda"
+  }
+}
