@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hire": "Hire Me"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "desc": "Building Telegram bots, web dashboards, and premium automation systems. Specializing in Node.js, Baileys, and exclusive scripts.",
+    "cta_work": "View Work",
+    "cta_tg": "Telegram",
+    "stat_bots": "Bots Built",
+    "stat_exp": "Years Exp",
+    "stat_coffee": "Coffees Drunk"
+  },
+  "skills": {
+    "label": "// Skills",
+    "title": "Stack & Tools",
+    "items": [
+      { "name": "Telegram Bot", "desc": "node-telegram-bot-api, Telegraf, inline keyboards, session management, role-based access." },
+      { "name": "WhatsApp Bot", "desc": "Baileys library, multi-session, connection handling, command routing." },
+      { "name": "Web Dashboard", "desc": "Dark premium UI, GitHub API backend, vault manager, token & role system." },
+      { "name": "File Integrity", "desc": "SHA-256 chain hash, HMAC-SHA256, XOR obfuscation, timing-safe comparison." },
+      { "name": "Node.js", "desc": "PM2, Express, modular refactor, async/await patterns, Termux deployment." },
+      { "name": "Encryption", "desc": "AES-256-GCM, steganography, SHA-512 hashing, JS obfuscation via js-confuser." }
+    ]
+  },
+  "projects": {
+    "label": "// Works",
+    "title": "Projects"
+  },
+  "contact": {
+    "label": "// Contact",
+    "title": "Let's Build\nSomething.",
+    "desc": "Need a custom bot, dashboard, or exclusive script? Hit me up.",
+    "tg": "Telegram @ungkeeeeee",
+    "ig": "Instagram @fturrmn"
+  },
+  "footer": {
+    "copy": "© 2026 Ungke — All rights reserved"
+  },
+  "music": {
+    "playing": "Now Playing",
+    "paused": "Paused"
+  }
+}
+
