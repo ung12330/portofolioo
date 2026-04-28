@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ungke — Telegram Bot Developer, Web Dashboard Builder, Node.js Specialist" />
+  <meta property="og:title" content="ungke — Portfolio" />
+  <meta property="og:description" content="Premium Telegram bots, WhatsApp automation, web dashboards & exclusive scripts." />
+  <meta name="theme-color" content="#060608" />
+  <title>ungke — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+</head>
+<body>
+
+<!-- ── Load bar ── -->
+<div id="load-bar"></div>
+
+<!-- ── Stars background ── -->
+<div id="stars" aria-hidden="true"></div>
+
+<!-- ── Custom cursor ── -->
+<div class="cursor-dot"  id="cursor-dot"  aria-hidden="true"></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════
+     NAVIGATION
+═════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-logo">
+    ⬡ <span class="dot">ungke</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#skills"   data-i18n="nav.skills">Keahlian</a></li>
+    <li><a href="#projects" data-i18n="nav.projects">Proyek</a></li>
+    <li><a href="#contact"  data-i18n="nav.contact">Kontak</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <!-- Language switcher -->
+    <div class="lang-switcher" aria-label="Language selector">
+      <button class="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+        <span class="lang-current-flag">🇮🇩</span>
+        <span class="lang-current-label">Indonesia</span>
+        <span class="arrow">▾</span>
+      </button>
+      <div class="lang-dropdown" role="listbox" aria-label="Select language">
+        <!-- populated by i18n.js -->
+      </div>
+    </div>
+
+    <a href="#contact" class="btn btn-ghost" data-i18n="nav.hire">Hire Me</a>
+  </div>
+</nav>
+
+
+<!-- ════════════════════════════════════
+     HERO
+═════════════════════════════════════ -->
+<section id="hero" aria-label="Introduction">
+  <div class="hero-inner">
+
+    <!-- Text side -->
+    <div class="hero-text">
+      <!-- foto diisi otomatis dari GitHub config.json via main.js -->
+      <div id="hero-photo-wrap" style="
+        width:88px;height:88px;border-radius:50%;
+        border:2px solid rgba(245,200,66,0.3);
+        overflow:hidden;margin-bottom:22px;
+        box-shadow:0 0 28px rgba(245,200,66,0.12);
+        background:#111114;
+      "></div>
+
+      <span class="hero-greeting" data-i18n="hero.greeting">Halo, Saya</span>
+
+      <h1 class="hero-name display">
+        Kingz<br>ungke<span class="cursor-blink" aria-hidden="true"></span>
+      </h1>
+
+      <p class="hero-desc" data-i18n="hero.desc">
+        Membangun bot Telegram, dashboard web, dan sistem otomatisasi premium.
+        Spesialisasi Node.js, Baileys, dan script eksklusif.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          <span data-i18n="hero.cta_work">Lihat Karya</span> ↓
+        </a>
+        <a href="https://t.me/ungkeeeeee" target="_blank" rel="noopener" class="btn btn-ghost">
+          ✈ <span data-i18n="hero.cta_tg">Telegram</span>
+        </a>
+      </div>
+
+      <div class="hero-stats" aria-label="Statistics">
+        <div class="stat-item">
+          <div class="stat-num">50<em>+</em></div>
+          <div class="stat-label" data-i18n="hero.stat_bots">Bot Dibuat</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3<em>+</em></div>
+          <div class="stat-label" data-i18n="hero.stat_exp">Tahun Exp</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">∞</div>
+          <div class="stat-label" data-i18n="hero.stat_coffee">Kopi Diminum</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Planet scene -->
+    <div id="planet-scene" aria-hidden="true">
+      <canvas id="planet-canvas"></canvas>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     SKILLS
+═════════════════════════════════════ -->
+<section id="skills" aria-labelledby="skills-heading">
+  <div class="section-header reveal">
+    <span class="label-tag" data-i18n="skills.label">// Keahlian</span>
+    <h2 id="skills-heading" class="section-title display" data-i18n="skills.title">Stack & Tools</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-top">
+        <div class="skill-left">
+          <span class="skill-icon">🤖</span>
+          <span class="skill-name">Telegram Bot</span>
+        </div>
+        <div class="skill-pct"><span class="pct-num">0</span><span class="pct-sign">%</span></div>
+      </div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="92"></div></div>
+      <div class="skill-desc">node-telegram-bot-api, Telegraf, inline keyboards, session management, role-based access.</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-top">
+        <div class="skill-left">
+          <span class="skill-icon">💬</span>
+          <span class="skill-name">WhatsApp Bot</span>
+        </div>
+        <div class="skill-pct"><span class="pct-num">0</span><span class="pct-sign">%</span></div>
+      </div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+      <div class="skill-desc">Baileys library, multi-session, connection handling, command routing.</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-top">
+        <div class="skill-left">
+          <span class="skill-icon">🌐</span>
+          <span class="skill-name">Web Dashboard</span>
+        </div>
+        <div class="skill-pct"><span class="pct-num">0</span><span class="pct-sign">%</span></div>
+      </div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="80"></div></div>
+      <div class="skill-desc">Dark premium UI, GitHub API backend, vault manager, token & role system.</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-top">
+        <div class="skill-left">
+          <span class="skill-icon">🛡️</span>
+          <span class="skill-name">File Integrity</span>
+        </div>
+        <div class="skill-pct"><span class="pct-num">0</span><span class="pct-sign">%</span></div>
+      </div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="88"></div></div>
+      <div class="skill-desc">SHA-256 chain hash, HMAC-SHA256, XOR obfuscation, timing-safe comparison.</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-top">
+        <div class="skill-left">
+          <span class="skill-icon">⚙️</span>
+          <span class="skill-name">Node.js</span>
+        </div>
+        <div class="skill-pct"><span class="pct-num">0</span><span class="pct-sign">%</span></div>
+      </div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+      <div class="skill-desc">PM2, Express, modular refactor, async/await patterns, Termux deployment.</div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-top">
+        <div class="skill-left">
+          <span class="skill-icon">🔐</span>
+          <span class="skill-name">Enkripsi</span>
+        </div>
+        <div class="skill-pct"><span class="pct-num">0</span><span class="pct-sign">%</span></div>
+      </div>
+      <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
+      <div class="skill-desc">AES-256-GCM, steganography, SHA-512 hashing, obfuskasi JS via js-confuser.</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     PROJECTS
+═════════════════════════════════════ -->
+<section id="projects" aria-labelledby="projects-heading">
+  <div class="section-header reveal">
+    <span class="label-tag" data-i18n="projects.label">// Karya</span>
+    <h2 id="projects-heading" class="section-title display" data-i18n="projects.title">Projects</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <article class="project-card">
+      <span class="project-tag">Telegram Bot</span>
+      <h3 class="project-name">Over Glitch</h3>
+      <p class="project-desc">Premium Telegram bot dengan payload menu, inline keyboard navigation, token validation, group registration, dan timezone-aware date display.</p>
+      <div class="project-stack">
+        <span class="stack-pill">Node.js</span>
+        <span class="stack-pill">node-telegram-bot-api</span>
+        <span class="stack-pill">PM2</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <span class="project-tag">Web Tool</span>
+      <h3 class="project-name">SHESH.DB GEN</h3>
+      <p class="project-desc">Client-side SHA-512 hash generator dengan dark luxury UI. Zero backend, instant hashing langsung di browser.</p>
+      <div class="project-stack">
+        <span class="stack-pill">HTML</span>
+        <span class="stack-pill">CSS</span>
+        <span class="stack-pill">Vanilla JS</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <span class="project-tag">Dashboard</span>
+      <h3 class="project-name">Vault Manager</h3>
+      <p class="project-desc">Admin dashboard berbasis GitHub API untuk manage token, role, grup, log, dan announcement. Role hierarchy 7 level.</p>
+      <div class="project-stack">
+        <span class="stack-pill">GitHub API</span>
+        <span class="stack-pill">HTML/CSS/JS</span>
+        <span class="stack-pill">Canvas</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <span class="project-tag">WhatsApp Bot</span>
+      <h3 class="project-name">Void Xotion</h3>
+      <p class="project-desc">WhatsApp automation bot via Baileys dengan multi-session support, connection bug fixes, dan command routing yang stabil.</p>
+      <div class="project-stack">
+        <span class="stack-pill">Baileys</span>
+        <span class="stack-pill">Node.js</span>
+        <span class="stack-pill">In-Memory Store</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <span class="project-tag">Security</span>
+      <h3 class="project-name">File Integrity System</h3>
+      <p class="project-desc">Node.js file integrity checker dengan SHA-256 chain hash, XOR obfuscation, HMAC-SHA256, dan randomized check intervals.</p>
+      <div class="project-stack">
+        <span class="stack-pill">Node.js</span>
+        <span class="stack-pill">Crypto</span>
+        <span class="stack-pill">HMAC</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <span class="project-tag">AI Interface</span>
+      <h3 class="project-name">NekografOpenAi</h3>
+      <p class="project-desc">Personal AI chat interface dengan Gemini 2.0 Flash, multi-turn history, custom system prompt, dan Groq backend di Vercel.</p>
+      <div class="project-stack">
+        <span class="stack-pill">Gemini API</span>
+        <span class="stack-pill">Groq</span>
+        <span class="stack-pill">Vercel</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     CONTACT
+═════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="contact-inner reveal">
+    <span class="label-tag" data-i18n="contact.label">// Kontak</span>
+    <h2 id="contact-heading" class="contact-title display shimmer-text" data-i18n="contact.title">Ayo Bangun
+Sesuatu.</h2>
+    <p class="contact-desc" data-i18n="contact.desc">
+      Butuh bot custom, dashboard, atau script eksklusif? Hit me up.
+    </p>
+    <div class="contact-links">
+      <a href="https://t.me/ungkeeeeee" target="_blank" rel="noopener" class="contact-link">
+        ✈ <span data-i18n="contact.tg">Telegram @ungkeeeeee</span>
+      </a>
+      <a href="https://instagram.com/fturrmn" target="_blank" rel="noopener" class="contact-link">
+        ◎ <span data-i18n="contact.ig">Instagram @fturrmn</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     FOOTER
+═════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">⬡ <span class="dot">ungke</span></div>
+  <p class="footer-copy" data-i18n="footer.copy">© 2026 — All rights reserved</p>
+</footer>
+
+
+<!-- ════════════════════════════════════
+     MUSIC PLAYER
+═════════════════════════════════════ -->
+<div id="music-player" aria-label="Music player">
+  <button class="music-play-btn" aria-label="Play/Pause music">▶</button>
+  <div class="music-info">
+    <div class="music-status" data-i18n="music.paused">Dijeda</div>
+    <div class="music-title">ungke — Space Ambient</div>
+  </div>
+  <div class="music-bars paused" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+</div>
+
+<!-- Scroll to top -->
+<button id="scroll-top" aria-label="Back to top">↑</button>
+
+
+<!-- ════════════════════════════════════
+     SCRIPTS (order matters)
+═════════════════════════════════════ -->
+<script src="assets/js/planet.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/music.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
