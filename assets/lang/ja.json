@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "skills": "スキル",
+    "projects": "実績",
+    "contact": "連絡",
+    "hire": "依頼する"
+  },
+  "hero": {
+    "greeting": "こんにちは、私は",
+    "desc": "Telegramボット、ウェブダッシュボード、プレミアム自動化システムを構築。Node.js・Baileys・限定スクリプト専門。",
+    "cta_work": "実績を見る",
+    "cta_tg": "テレグラム",
+    "stat_bots": "ボット製作数",
+    "stat_exp": "年の経験",
+    "stat_coffee": "コーヒー消費"
+  },
+  "skills": {
+    "label": "// スキル",
+    "title": "技術スタック",
+    "items": [
+      { "name": "Telegramボット", "desc": "node-telegram-bot-api、Telegraf、インラインキーボード、セッション管理、ロールベースアクセス。" },
+      { "name": "WhatsAppボット", "desc": "Baileysライブラリ、マルチセッション、接続処理、コマンドルーティング。" },
+      { "name": "Webダッシュボード", "desc": "ダークプレミアムUI、GitHub APIバックエンド、Vault Manager、トークン・ロールシステム。" },
+      { "name": "ファイル整合性", "desc": "SHA-256チェーンハッシュ、HMAC-SHA256、XOR難読化、タイミングセーフ比較。" },
+      { "name": "Node.js", "desc": "PM2、Express、モジュラーリファクタ、async/awaitパターン、Termuxデプロイ。" },
+      { "name": "暗号化", "desc": "AES-256-GCM、ステガノグラフィ、SHA-512ハッシュ、js-confuserによるJS難読化。" }
+    ]
+  },
+  "projects": {
+    "label": "// 実績",
+    "title": "プロジェクト"
+  },
+  "contact": {
+    "label": "// 連絡",
+    "title": "一緒に作ろう\n何かを。",
+    "desc": "カスタムボット、ダッシュボード、限定スクリプトが必要ですか？",
+    "tg": "Telegram @ungkeeeeee",
+    "ig": "Instagram @fturrmn"
+  },
+  "footer": {
+    "copy": "© 2025 Ungke — All rights reserved"
+  },
+  "music": {
+    "playing": "再生中",
+    "paused": "一時停止"
+  }
+}
